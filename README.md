@@ -23,7 +23,11 @@ A robust and secure full-stack authentication system built with **Angular 21** a
 
 ## Reset Password Page
 
-![Forgot Password Page](screenshots/Reset_Password.png)
+![Reset Password Page](screenshots/Reset_Password.png)
+
+## Dashboard Page
+
+![Dashboard Page](screenshots/Dashboard.png)
 
 ---
 
