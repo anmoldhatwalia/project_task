@@ -1,0 +1,36 @@
+<div class="auth-wrapper">
+
+  <div class="auth-card">
+
+    <h1 class="title signup-title">Create Account</h1>
+
+    <input type="text" [(ngModel)]="name" placeholder="Full Name">
+
+    <input type="email" (blur)="emailTouch = true" [(ngModel)]="email" placeholder="Email">
+    @if(emailTouch && !email){
+    <p class="valid">Email is required</p>
+    }
+
+
+    <input type="password" [(ngModel)]="password"  placeholder="Password">
+
+    
+    @if(password && password.length < 6){ <p class="valid">Password must be at least 6 characters</p>
+      }
+
+    <input type="password" [(ngModel)]="confirmPassword"  placeholder="Confirm Password">
+    @if(confirmPassword &&password !== confirmPassword){
+      <p class="valid" >Password is not Match</p>
+    }
+
+    <button (click)="signup()">
+      Signup
+    </button>
+
+    <a routerLink="/login">
+      Already have an account?
+    </a>
+
+  </div>
+
+</div>

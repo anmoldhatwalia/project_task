@@ -1,0 +1,42 @@
+<div class="auth-wrapper">
+
+  <div class="auth-card">
+
+    <h1 class="title">
+      Welcome Back
+    </h1>
+
+    <p class="subtitle">
+      Sign in to continue
+    </p>
+
+    <input type="email" [(ngModel)]="email"  (blur)="emailTouch = true" placeholder="Email">
+
+    @if(emailTouch && !email){
+    <p class="valid">Email is required</p>
+    }
+
+    <input type="password" [(ngModel)]="password" placeholder="Password">
+
+    @if(password && password.length < 6){ <p class="valid">Password must be at least 6 characters</p>
+      }
+
+      <button (click)="login()">
+        Login
+      </button>
+
+      <div class="links">
+
+        <a routerLink="/forgot-password">
+          Forgot Password?
+        </a>
+
+        <a routerLink="/signup">
+          Create Account
+        </a>
+
+      </div>
+
+  </div>
+
+</div>

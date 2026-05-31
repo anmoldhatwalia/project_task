@@ -1,0 +1,84 @@
+<app-navbar></app-navbar>
+<div class="dashboard-container">
+
+  @if(loading){
+    <h2 class="loading">
+      Loading...
+    </h2>
+ 
+  }
+
+  @else {
+
+     <div class="hero">
+
+    <h1>
+      Welcome {{ profile?.name }}👋
+    </h1>
+
+    <p>
+      Manage your account securely
+    </p>
+
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <h3>Profile</h3>
+
+      <p>
+        View your information
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Security</h3>
+
+      <p>
+        Manage password
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Settings</h3>
+
+      <p>
+        Update preferences
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="profile-card">
+
+    <h2>
+      User Information
+      <!-- <pre>{{ profile | json }}</pre> -->
+    </h2>
+
+    <p>
+      <strong>Name:</strong>
+      {{ profile?.name }}
+    </p>
+
+    <p>
+      <strong>Email:</strong>
+      {{ profile?.email }}
+    </p>
+
+
+  </div>
+
+
+
+
+
+  }
+</div>

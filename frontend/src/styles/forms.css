@@ -1,0 +1,16 @@
+input{
+
+ width:100%;
+ padding:14px;
+ margin-bottom:16px;
+ border-radius:14px;
+ border:1px solid #d2d2d7;
+ background: rgb(254, 254, 254);
+ outline:none;
+}
+
+input:focus{
+
+ border-color:#0071E3;
+ box-shadow:0 0 0 4px rgba(0,113,227,.15);
+}

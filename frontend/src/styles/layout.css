@@ -1,0 +1,40 @@
+.title{
+ font-size:32px;
+ font-weight:700;
+ text-align: center;
+ margin-bottom:10px;
+}
+
+.subtitle{  
+  color:#6E6E73;
+  text-align: center;
+ margin-bottom:30px;
+}
+
+
+.auth-wrapper{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: url('https://i.pinimg.com/originals/6f/6c/15/6f6c1538b050072b002dbc06bedaaf90.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.auth-card{
+  width: 100%;
+  max-width: 430px;
+  background: rgb(249, 245, 254);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 20px 30px rgba(0,0,0,.18);
+}
+@media(max-width:768px){
+
+ .auth-card{
+   width:90%;
+ }
+}
