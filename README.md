@@ -6,8 +6,24 @@ A robust and secure full-stack authentication system built with **Angular 21** a
 
 ## 📸 Preview
 
-![Application Screenshot](https://via.placeholder.com/800x450?text=Application+Screenshot+Placeholder)
-*Add your application screenshot here*
+# Project Task
+
+## Login Page
+
+![Login Page](screenshots/login.png)
+
+## Signup Page
+
+![Signup Page](screenshots/Create_Account.png)
+
+
+## Forgot Password Page
+
+![Forgot Password Page](screenshots/Forgot_Password.png)
+
+## Reset Password Page
+
+![Forgot Password Page](screenshots/Reset_Password.png)
 
 ---
 
